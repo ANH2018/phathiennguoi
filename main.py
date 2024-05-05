@@ -45,7 +45,7 @@ while True:
         if not validar_contorno:
             continue
 
-        cv2.rectangle(frame1,(x,y),(x+w,y+h),(0,255,0),2)        
+        cv2.rectangle(frame1,(x,y),(x+w,y+h),(0,255,255),2)        
         centro = pega_centro(x, y, w, h)
         detec.append(centro)
         cv2.circle(frame1, centro, 4, (0, 0,255), -1)
